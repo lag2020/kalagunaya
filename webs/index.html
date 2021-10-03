@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title img src="../img/kalagunaya2.ico">Kalagunaya</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+
+
+<div class="topnav" id="myTopnav">
+    <a href="../webs/index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Countries
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="../Country Pages/athens_greek.html">Athens, Greece</a>
+        <a href="../Country Pages/auckland_newzeland.html">Aukland, New Zealand</a>
+        <a href="../Country Pages/bangkok_thailand.html">Bangkok, Thailand</a>
+        <a href="../Country Pages/cairo_egypt.html">Cairo, Egypt</a>
+        <a href="../Country Pages/cape-town_south-africa.html">Cape Town, South Africa</a>
+        <a href="../Country Pages/colombo_sri-lanka.html">Colombo, Sri Lanka</a>
+        <a href="../Country Pages/dubai_UAE.html">Dubai, UAE</a>
+        <a href="../Country Pages/kinshasa_congo.html">Kinshasa, D. R. Congo</a>
+        <a href="../Country Pages/london_UK.html">London, UK</a>
+        <a href="../Country Pages/los-angelese_USA.html">Los Angeles, USA</a>
+        <a href="../Country Pages/madrid_spain.html">Madrid, Spain</a>
+        <a href="../Country Pages/moscow_russia.html">Moscow, Russia</a>
+        <a href="../Country Pages/mumbai_india.html">Mumbai, India</a>
+        <a href="../Country Pages/new-york_USA.html">New York, USA</a>
+        <a href="../Country Pages/nuuk_greenland.html">Nuuk, Greenland</a>
+        <a href="../Country Pages/perth_australia.html">Perth, Australia</a>
+        <a href="../Country Pages/san-tiago_chile.html">San Tiago, Chile</a>
+        <a href="../Country Pages/sao-polo_brazil.html">Sao Paulo, Brazil</a>
+        <a href="../Country Pages/shanghai_china.html">Shanghai, China</a>
+        <a href="../Country Pages/singapore_singapore.html">Singapore, Singapore</a>
+        <a href="../Country Pages/tashkent_uzbekistan.html">Tashkent, Uzbekistan</a>
+        <a href="../Country Pages/tehran_iran.html">Tehran, Iran</a>
+        <a href="../Country Pages/tokyo_japan.html">Tokyo, Japan</a>
+      </div>
+    </div>
+
+    <a href="../webs/mission.html">Mission</a>
+    <a href="../webs/aboutus.html">About Us</a>
+    <a href="../webs/reference.html">Reference</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+  <img id="logo1" src="../img/IMG-20210815-WA0010-PhotoRoom.png">
+  <img id="logo2" src="../img/kalagunaya.png">
+
+<div class="allpic">
+  
+<div class="slideshow-container">
+
+<!-- <div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img class="slidIMG" id="img1" src="../img/chlor_sea_temp.gif" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img class="slidIMG" id="img2" src="../img/chlorophyll.gif" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img class="slidIMG" id="img3" src="../img/CO conc..gif" style="width:100%">
+</div> -->
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img class="slidIMG" id="img4" src="../img/land_temp.gif" style="width:100%">
+</div>
+
+</div>
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+
+<!-- <img src="../img/Earth GIF.gif" id="gif1"> -->
+
+<h3 id="card">Only when the well is dry, we know the worth of water <br> -Benjamin Franklin- <br> <br> Climate change is 
+    ocurring at a high rate at present. The adverse effects of this tradegy aren't just going to be experienced 
+    in the future, because we are experiencing them at this very moment while you are reading this. Glaziers which 
+    existed for thousands of years are now melting in various locations like Antartica, Arctic and Himalayas. 
+    More than 700 mammal and bird species are losing their habitats due to global warming annually and more than 
+    1 million species are about to go extinct by 2050 due to this catastrophe. How unfair is this? Millions of
+    species of animals are losing their lives just because of us humans. But even we won't be able to survive this
+    disaster. Because most of the world will become uninhabitable by 2100 and small islands and coastal areas
+    will be swallowed by the ocean. That means our human civilization will have to be concentrated in a
+    small area in the far northern and southern hemispheres. So, let's start to stop the destruction being done 
+    by us step by step and achieve the principal goal of ending global warming. </h3>
+
+
+</body>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 14000); // Change image every 2 seconds
+    }
+    </script>
+
+</html>

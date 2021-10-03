@@ -1,0 +1,3 @@
+Probability of flood occuring
+Probability of forest fires occuring
+Temperature level

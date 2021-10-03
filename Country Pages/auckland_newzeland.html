@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auckalnd, New Zealand</title>
+    <link rel="stylesheet" href="../Country CSS/auckland_newzeland.css">
+</head>
+<body>
+    
+    <div class="topnav" id="myTopnav">
+        <a href="../webs/index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Countries
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../Country Pages/athens_greek.html">Athens, Greece</a>
+        <a href="../Country Pages/auckland_newzeland.html">Aukland, New Zealand</a>
+        <a href="../Country Pages/bangkok_thailand.html">Bangkok, Thailand</a>
+        <a href="../Country Pages/cairo_egypt.html">Cairo, Egypt</a>
+        <a href="../Country Pages/cape-town_south-africa.html">Cape Town, South Africa</a>
+        <a href="../Country Pages/colombo_sri-lanka.html">Colombo, Sri Lanka</a>
+        <a href="../Country Pages/dubai_UAE.html">Dubai, UAE</a>
+        <a href="../Country Pages/kinshasa_congo.html">Kinshasa, D. R. Congo</a>
+        <a href="../Country Pages/london_UK.html">London, UK</a>
+        <a href="../Country Pages/los-angelese_USA.html">Los Angeles, USA</a>
+        <a href="../Country Pages/madrid_spain.html">Madrid, Spain</a>
+        <a href="../Country Pages/moscow_russia.html">Moscow, Russia</a>
+        <a href="../Country Pages/mumbai_india.html">Mumbai, India</a>
+        <a href="../Country Pages/new-york_USA.html">New York, USA</a>
+        <a href="../Country Pages/nuuk_greenland.html">Nuuk, Greenland</a>
+        <a href="../Country Pages/perth_australia.html">Perth, Australia</a>
+        <a href="../Country Pages/san-tiago_chile.html">San Tiago, Chile</a>
+        <a href="../Country Pages/sao-polo_brazil.html">Sao Paulo, Brazil</a>
+        <a href="../Country Pages/shanghai_china.html">Shanghai, China</a>
+        <a href="../Country Pages/singapore_singapore.html">Singapore, Singapore</a>
+        <a href="../Country Pages/tashkent_uzbekistan.html">Tashkent, Uzbekistan</a>
+        <a href="../Country Pages/tehran_iran.html">Tehran, Iran</a>
+        <a href="../Country Pages/tokyo_japan.html">Tokyo, Japan</a>
+          </div>
+        </div>
+    
+        <a href="../webs/mission.html">Mission</a>
+        <a href="../webs/aboutus.html">About Us</a>
+        <a href="../webs/reference.html">Reference</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    
+      <img id="logo1" src="../img/IMG-20210815-WA0010-PhotoRoom.png">
+      <img id="logo2" src="../img/kalagunaya.png">
+
+      <div class="titlebar">
+        <h1 id="MainTitle">Auckalnd</h1>
+        <img class="bg" src="../img/Country imgs/auckland_new-zeland.jpg">
+    </div>
+
+
+      <div class="AllCards">
+      <div class="StatusCard" id="Card1">      
+      <h3><span class="StatusTitle">29-Sep-2021</span></h3>
+      <script>
+        var temperature = 12.7;
+        var humidity = 76.1;
+        var wind_speed = 15;
+        var sea_level_pressure = 30.1;
+        var precipitation = 2;
+        var temperature_level = "a";
+        var flood = "a";
+        var cyclones = "a";
+        var forest_fires = "a";
+
+        document.write("Temperature(C°): " + temperature);
+        document.write("<br>");
+        document.write("Humidity(%): " + humidity);
+        document.write("<br>");
+        document.write("Precipitation(mm): " + precipitation);
+        document.write("<br>");
+        document.write("Wind Speed(km/h): " + wind_speed);
+        document.write("<br>");
+        document.write("Sea-level Pressure(hg): " + sea_level_pressure);
+        document.write("<br>");
+
+        if (temperature>=20 & temperature<=29.99) {
+          var temperature_level = "Normal";
+          document.write("Temperature level: " + temperature_level.fontcolor("green"));
+        }
+        else if (temperature>=30 & temperature<=34.99) {
+          var temperature_level = "High";
+          document.write("Tmperature level: " + temperature_level.fontcolor("orange"));
+        }
+        else if (temperature<=19.99 & temperature>=7.5) {
+          var temperature_level = "Cold";
+          document.write("Temperature level: " + temperature_level.fontcolor("blue"));
+        }
+        else if (temperature<7.49 & temperature>=(-5)) {
+          var temperature_level = "Very cold";
+          document.write("Temperature level: " + temperature_level.fontcolor("darkblue"));
+        }
+        else if (temperature<=(-5.01)) {
+          var temperature_level = "Freezing";
+          document.write("Temperature level: " + temperature_level.fontcolor("purple"));
+        }
+        else if (temperature>=35) {
+          var temperature_level = "Very high";
+          document.write("Temperature level: " + temperature_level.fontcolor("red"));
+        }
+
+        document.write("<br>");
+
+        if (precipitation<=39.99 & precipitation>=30) {
+              var flood = "High risk";
+              document.write("Probability of Flood occuring: " + flood.fontcolor("orange"));
+            }
+            else if (precipitation>=25 & precipitation<=29.99) {
+              var flood = "Medium risk";
+              document.write("Probability of Flood occuring: " + flood.fontcolor("yellow"));
+            }
+            else if (precipitation>40) {
+              var flood = "Flood";
+              document.write("Probability of Flood occuring: " + flood.fontcolor("red"));
+            }
+            else if (precipitation<24.99) {
+              var flood = "Low risk";
+              document.write("Probability of Flood occuring: " + flood.fontcolor("green"));
+            }
+
+        document.write("<br>");
+        
+        if (wind_speed>31 & wind_speed<=48.99) {
+          var cyclones = "Depression";
+          document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("blue"));
+        }
+        else if (wind_speed>=49 & wind_speed<=60.99) {
+          var cyclones = "Deep depression";
+          document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("darkblue"));
+        }
+        else if (wind_speed>=61 & wind_speed<=87.99) {
+          var cyclones = "Cyclonic storm";
+          document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("midnightblue"));
+        }
+        else if (wind_speed>=88 & wind_speed<=116.99) {
+          var cyclones = "Severe cyclonic storm";
+          document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("indigo"));
+        }
+        else if (wind_speed>=117 & wind_speed<=220.99) {
+          var cyclones = "Typhoon";
+          document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("purple"));
+        }
+        else if (wind_speed>=0.01 & wind_speed<=30.99) {
+          var cyclones = "Low risk";
+          document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("green"));
+        }
+        else if (wind_speed>=221) {
+          var cyclones = "Super cyclone";
+          document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("darkslategray"));
+        }
+        
+        document.write("<br>");
+
+        if (humidity<=40.01 & humidity>=50 & temperature>=30 & temperature<=34.99) {
+          var forest_fires = "Medium risk";
+          document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("yellow"));
+        }
+        else if (humidity<=30.01 & humidity>=40 & temperature>=30 & temperature<=34.99) {
+          var forest_fires = "High risk";
+          document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("orange"));
+        }
+        else if (humidity<=30 & temperature>=35) {
+          var forest_fires = "Very high risk";
+          document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("red"));
+        }
+        else if (humidity>=40.01 & humidity<=50 & temperature<=27.5) {
+          var forest_fires = "Low risk";
+          document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("green"));
+        }
+        else if (humidity>=30.01 & humidity<=40 & temperature<=27.5) {
+          var forest_fires = "Medium risk";
+          document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("yellow"));
+        }
+        else if (humidity<=30 & temperature<=27.5) {
+          var forest_fires = "High risk";
+          document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("orange"));
+        }
+        else {
+          var forest_fires = "Very low risk";
+          document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("blue"));
+        }
+      
+
+      </script>
+      </div>
+
+      <div class="StatusCard" id="Card2">      
+        <h3><span class="StatusTitle">30-Sep-2021</span></h3>
+        <script>
+          var temperature = 14;
+          var humidity = 79.3;
+          var wind_speed = 18.6;
+          var sea_level_pressure = 30.1;
+          var precipitation = 8.2;
+          var temperature_level = "a";
+          var flood = "a";
+          var cyclones = "a";
+          var forest_fires = "a";
+  
+          document.write("Temperature(C°): " + temperature);
+          document.write("<br>");
+          document.write("Humidity(%): " + humidity);
+          document.write("<br>");
+          document.write("Precipitation(mm): " + precipitation);
+          document.write("<br>");
+          document.write("Wind Speed(km/h): " + wind_speed);
+          document.write("<br>");
+          document.write("Sea-level Pressure(hg): " + sea_level_pressure);
+          document.write("<br>");
+  
+          if (temperature>=20 & temperature<=29.99) {
+            var temperature_level = "Normal";
+            document.write("Temperature level: " + temperature_level.fontcolor("green"));
+          }
+          else if (temperature>=30 & temperature<=34.99) {
+            var temperature_level = "High";
+            document.write("Tmperature level: " + temperature_level.fontcolor("orange"));
+          }
+          else if (temperature<=19.99 & temperature>=7.5) {
+            var temperature_level = "Cold";
+            document.write("Temperature level: " + temperature_level.fontcolor("blue"));
+          }
+          else if (temperature<7.49 & temperature>=(-5)) {
+            var temperature_level = "Very cold";
+            document.write("Temperature level: " + temperature_level.fontcolor("darkblue"));
+          }
+          else if (temperature<=(-5.01)) {
+            var temperature_level = "Freezing";
+            document.write("Temperature level: " + temperature_level.fontcolor("purple"));
+          }
+          else if (temperature>=35) {
+            var temperature_level = "Very high";
+            document.write("Temperature level: " + temperature_level.fontcolor("red"));
+          }
+  
+          document.write("<br>");
+  
+          if (precipitation<=39.99 & precipitation>=30) {
+              var flood = "High risk";
+              document.write("Probability of Flood occuring: " + flood.fontcolor("orange"));
+            }
+            else if (precipitation>=25 & precipitation<=29.99) {
+              var flood = "Medium risk";
+              document.write("Probability of Flood occuring: " + flood.fontcolor("yellow"));
+            }
+            else if (precipitation>40) {
+              var flood = "Flood";
+              document.write("Probability of Flood occuring: " + flood.fontcolor("red"));
+            }
+            else if (precipitation<24.99) {
+              var flood = "Low risk";
+              document.write("Probability of Flood occuring: " + flood.fontcolor("green"));
+            }
+  
+          document.write("<br>");
+          
+          if (wind_speed>31 & wind_speed<=48.99) {
+            var cyclones = "Depression";
+            document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("blue"));
+          }
+          else if (wind_speed>=49 & wind_speed<=60.99) {
+            var cyclones = "Deep depression";
+            document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("darkblue"));
+          }
+          else if (wind_speed>=61 & wind_speed<=87.99) {
+            var cyclones = "Cyclonic storm";
+            document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("midnightblue"));
+          }
+          else if (wind_speed>=88 & wind_speed<=116.99) {
+            var cyclones = "Severe cyclonic storm";
+            document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("indigo"));
+          }
+          else if (wind_speed>=117 & wind_speed<=220.99) {
+            var cyclones = "Typhoon";
+            document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("purple"));
+          }
+          else if (wind_speed>=0.01 & wind_speed<=30.99) {
+            var cyclones = "Low risk";
+            document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("green"));
+          }
+          else if (wind_speed>=221) {
+            var cyclones = "Super cyclone";
+            document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("darkslategray"));
+          }
+          
+          document.write("<br>");
+  
+          if (humidity<=40.01 & humidity>=50 & temperature>=30 & temperature<=34.99) {
+            var forest_fires = "Medium risk";
+            document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("yellow"));
+          }
+          else if (humidity<=30.01 & humidity>=40 & temperature>=30 & temperature<=34.99) {
+            var forest_fires = "High risk";
+            document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("orange"));
+          }
+          else if (humidity<=30 & temperature>=35) {
+            var forest_fires = "Very high risk";
+            document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("red"));
+          }
+          else if (humidity>=40.01 & humidity<=50 & temperature<=27.5) {
+            var forest_fires = "Low risk";
+            document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("green"));
+          }
+          else if (humidity>=30.01 & humidity<=40 & temperature<=27.5) {
+            var forest_fires = "Medium risk";
+            document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("yellow"));
+          }
+          else if (humidity<=30 & temperature<=27.5) {
+            var forest_fires = "High risk";
+            document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("orange"));
+          }
+          else {
+            var forest_fires = "Very low risk";
+            document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("blue"));
+          }
+        
+  
+        </script>
+        </div>
+
+        <div class="StatusCard" id="Card3">      
+          <h3><span class="StatusTitle">1-Oct-2021</span></h3>
+          <script>
+            var temperature = 13.1;
+            var humidity = 72.6;
+            var wind_speed = 11.9;
+            var sea_level_pressure = 30.2;
+            var precipitation = 0;
+            var temperature_level = "a";
+            var flood = "a";
+            var cyclones = "a";
+            var forest_fires = "a";
+    
+            document.write("Temperature(C°): " + temperature);
+            document.write("<br>");
+            document.write("Humidity(%): " + humidity);
+            document.write("<br>");
+            document.write("Precipitation(mm): " + precipitation);
+            document.write("<br>");
+            document.write("Wind Speed(km/h): " + wind_speed);
+            document.write("<br>");
+            document.write("Sea-level Pressure(hg): " + sea_level_pressure);
+            document.write("<br>");
+    
+            if (temperature>=20 & temperature<=29.99) {
+              var temperature_level = "Normal";
+              document.write("Temperature level: " + temperature_level.fontcolor("green"));
+            }
+            else if (temperature>=30 & temperature<=34.99) {
+              var temperature_level = "High";
+              document.write("Tmperature level: " + temperature_level.fontcolor("orange"));
+            }
+            else if (temperature<=19.99 & temperature>=7.5) {
+              var temperature_level = "Cold";
+              document.write("Temperature level: " + temperature_level.fontcolor("blue"));
+            }
+            else if (temperature<7.49 & temperature>=(-5)) {
+              var temperature_level = "Very cold";
+              document.write("Temperature level: " + temperature_level.fontcolor("darkblue"));
+            }
+            else if (temperature<=(-5.01)) {
+              var temperature_level = "Freezing";
+              document.write("Temperature level: " + temperature_level.fontcolor("purple"));
+            }
+            else if (temperature>=35) {
+              var temperature_level = "Very high";
+              document.write("Temperature level: " + temperature_level.fontcolor("red"));
+            }
+    
+            document.write("<br>");
+    
+            if (precipitation<=39.99 & precipitation>=30) {
+              var flood = "High risk";
+              document.write("Probability of Flood occuring: " + flood.fontcolor("orange"));
+            }
+            else if (precipitation>=25 & precipitation<=29.99) {
+              var flood = "Medium risk";
+              document.write("Probability of Flood occuring: " + flood.fontcolor("yellow"));
+            }
+            else if (precipitation>40) {
+              var flood = "Flood";
+              document.write("Probability of Flood occuring: " + flood.fontcolor("red"));
+            }
+            else if (precipitation<24.99) {
+              var flood = "Low risk";
+              document.write("Probability of Flood occuring: " + flood.fontcolor("green"));
+            }
+            
+    
+            document.write("<br>");
+            
+            if (wind_speed>31 & wind_speed<=48.99) {
+              var cyclones = "Depression";
+              document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("blue"));
+            }
+            else if (wind_speed>=49 & wind_speed<=60.99) {
+              var cyclones = "Deep depression";
+              document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("darkblue"));
+            }
+            else if (wind_speed>=61 & wind_speed<=87.99) {
+              var cyclones = "Cyclonic storm";
+              document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("midnightblue"));
+            }
+            else if (wind_speed>=88 & wind_speed<=116.99) {
+              var cyclones = "Severe cyclonic storm";
+              document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("indigo"));
+            }
+            else if (wind_speed>=117 & wind_speed<=220.99) {
+              var cyclones = "Typhoon";
+              document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("purple"));
+            }
+            else if (wind_speed>=0.01 & wind_speed<=30.99) {
+              var cyclones = "Low risk";
+              document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("green"));
+            }
+            else if (wind_speed>=221) {
+              var cyclones = "Super cyclone";
+              document.write("Probability of Cyclones occuring: " + cyclones.fontcolor("darkslategray"));
+            }
+            
+            document.write("<br>");
+    
+            if (humidity<=40.01 & humidity>=50 & temperature>=30 & temperature<=34.99) {
+              var forest_fires = "Medium risk";
+              document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("yellow"));
+            }
+            else if (humidity<=30.01 & humidity>=40 & temperature>=30 & temperature<=34.99) {
+              var forest_fires = "High risk";
+              document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("orange"));
+            }
+            else if (humidity<=30 & temperature>=35) {
+              var forest_fires = "Very high risk";
+              document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("red"));
+            }
+            else if (humidity>=40.01 & humidity<=50 & temperature<=27.5) {
+              var forest_fires = "Low risk";
+              document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("green"));
+            }
+            else if (humidity>=30.01 & humidity<=40 & temperature<=27.5) {
+              var forest_fires = "Medium risk";
+              document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("yellow"));
+            }
+            else if (humidity<=30 & temperature<=27.5) {
+              var forest_fires = "High risk";
+              document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("orange"));
+            }
+            else {
+              var forest_fires = "Very low risk";
+              document.write("Probability of Forest fires occuring: " + forest_fires.fontcolor("blue"));
+            }
+          
+    
+          </script>
+          </div>
+
+
+    </div>
+
+<p>This is a sample of few indicators and warnings</p>
+
+</body>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+</html>
